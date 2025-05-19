@@ -1,0 +1,71 @@
+.login {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("https://contents.mediadecathlon.com/p2823830/k$da038c6d42150801308a51831c6fda25/defaut.jpg?format=auto")
+        center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    font-family: Roboto, sans-serif;
+    position: relative;
+  }
+  
+  .login__decathlon-logo {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .login__decathlon-logo img {
+    width: 100px;
+  }
+  
+  .login__content {
+    /*border: 2px solid green;*/
+    text-align: center;
+    padding-top: 60px;
+    padding: 30px;
+  }
+  
+  .login__content h1 {
+    margin: 20px 0;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  .login__content p {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .login__content button {
+    border-radius: 6px;
+    border: 1px solid #000;
+    color: #000;
+    background: #fff;
+    padding: 11px 26px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background 0.4s ease-out;
+  }
+  
+  .login__content button:hover {
+    background: #eee;
+  }
+  
+  @media (min-width: 900px) {
+    .login {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .login__content {
+      text-align: left;
+      margin-top: -80px;
+    }
+    .login__content h1 {
+      font-size: 60px;
+    }
+  }
