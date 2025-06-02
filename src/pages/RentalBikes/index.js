@@ -182,7 +182,7 @@ const RentalBikes = () => {
           onChange={(e) => setFilterUnit(e.target.value)}
         />
         <TextField
-          label="Filter by Algolia Object ID"
+          label="Filter by Article Code"
           size="small"
           value={filterAlgolia}
           onChange={(e) => setFilterAlgolia(e.target.value)}
@@ -201,7 +201,7 @@ const RentalBikes = () => {
             <TableHead>
               <TableRow>
                 <TableCell>Unit ID</TableCell>
-                <TableCell>Algolia Object ID</TableCell>
+                <TableCell>Article Code</TableCell>
                 <TableCell>Price per Day (€)</TableCell>
                 <TableCell>Active</TableCell>
                 <TableCell align="center">Actions</TableCell>
@@ -260,7 +260,7 @@ const RentalBikes = () => {
             margin="dense"
           />
           <TextField
-            label="Algolia Object ID"
+            label="Article Code"
             name="algoliaObjectId"
             value={bikeForm.algoliaObjectId}
             onChange={handleFormChange}

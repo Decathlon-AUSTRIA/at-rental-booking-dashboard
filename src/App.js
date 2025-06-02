@@ -14,6 +14,8 @@ import RentalBookings from "./pages/RentalBookings";
 import Login from "./pages/Login";
 import UserNotAllowed from "./pages/UserNotAllowed";
 import { useAuth0 } from "@auth0/auth0-react";
+import { useEffect } from "react";
+import { use } from "react";
 
 function App() {
   const { isAuthenticated, isLoading, user } = useAuth0();
@@ -31,7 +33,8 @@ function App() {
   // Check if the authenticated user's email is in the allowed list
 
   // const isUserAllowed = isAuthenticated && user && allowedEmails.includes(user.email);
-  const isUserAllowed = isAuthenticated && user;
+  const isUserAllowed =
+    isAuthenticated && user && user.email.indexOf("decathlon.com") > -1;
 
   return (
     <Router>
