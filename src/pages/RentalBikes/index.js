@@ -158,7 +158,7 @@ const RentalBikes = () => {
   return (
     <div style={{ padding: 20 }}>
       <Typography variant="h4" gutterBottom>
-        Rental Bikes Management
+        Rental Products Management
       </Typography>
 
       <Button
@@ -170,7 +170,7 @@ const RentalBikes = () => {
         }}
         onClick={() => handleOpenDialog()}
       >
-        Add New Bike
+        Add New Product
       </Button>
 
       {/* Filters */}
@@ -190,7 +190,7 @@ const RentalBikes = () => {
       </div>
 
       <Typography variant="subtitle1" gutterBottom>
-        Total Bikes: {filteredBikes.length}
+        Total Products: {filteredBikes.length}
       </Typography>
 
       {loading ? (
@@ -249,7 +249,9 @@ const RentalBikes = () => {
 
       {/* Add/Edit Dialog */}
       <Dialog open={openDialog} onClose={handleCloseDialog}>
-        <DialogTitle>{editingBike ? "Edit Bike" : "Add New Bike"}</DialogTitle>
+        <DialogTitle>
+          {editingBike ? "Edit Product" : "Add New Product"}
+        </DialogTitle>
         <DialogContent>
           <TextField
             label="Unit ID"

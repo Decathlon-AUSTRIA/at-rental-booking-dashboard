@@ -20,7 +20,7 @@ import LoginButton from "../LoginButton";
 import LogoutButton from "../LogoutButton";
 
 const menuItems = [
-  { label: "Rental‑Bikes", to: "/rental-bikes" },
+  { label: "Rental‑Products", to: "/rental-bikes" },
   { label: "Rental‑Bookings", to: "/rental-bookings" },
 ];
 

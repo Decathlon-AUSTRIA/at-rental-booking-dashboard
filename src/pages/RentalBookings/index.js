@@ -230,7 +230,10 @@ const RentalBookings = () => {
                 <TableCell>Pickup Hour</TableCell>
                 <TableCell>Return Date</TableCell>
                 <TableCell>Return Hour</TableCell>
+                {/*
                 <TableCell>Sportlerpass</TableCell>
+                */}
+
                 <TableCell align="center">Actions</TableCell>
               </TableRow>
             </TableHead>
@@ -252,7 +255,10 @@ const RentalBookings = () => {
                     {b.endDate?.split("-").reverse().join(".")}
                   </TableCell>
                   <TableCell>{b.endHour}</TableCell>
+                  {/*
                   <TableCell>{b.sportlerpass}</TableCell>
+                  */}
+
                   <TableCell align="center">
                     <Button
                       variant="outlined"
